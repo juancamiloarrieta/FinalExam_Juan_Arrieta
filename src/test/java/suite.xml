@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" >
+    <parameter name="browser" value="Google Chrome"/>
+    <!--suppress CheckTagEmptyBody -->
+    <parameter name="URL" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"></parameter>
+    <parameter name="username" value="jkisworking@gmail.com"></parameter>
+    <parameter name="password" value="1999Arrieta"></parameter>
+    <test name="LoginTest">
+        <classes>
+            <class name="logInTest.LogInTest"/>
+        </classes>
+    </test>
+    <test name="LogOutTest">
+        <classes>
+            <class name="logOutTest.LogOutTest"/>
+        </classes>
+    </test>
+    <test name="DisableUserTest">
+        <classes>
+            <class name="disableUserTest.DisableUserTest"/>
+        </classes>
+    </test>
+</suite>
